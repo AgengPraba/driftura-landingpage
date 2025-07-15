@@ -1,2 +1,19 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, night;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Exo+2:wght@400;500&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1, h2, h3, .font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+} */
