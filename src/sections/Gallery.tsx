@@ -74,6 +74,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
-
-lorem ipsum dolor sit amet    
+export default Gallery;    
