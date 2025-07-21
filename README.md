@@ -7,7 +7,7 @@ Driftura Showroom is an interactive web application that allows users to explore
 ## How to Run the Project
 #### 1. Clone the repository
 ```
-git clone https://github.com/username/driftura-showroom.git
+git clone https://github.com/AgengPraba/driftura-showroom
 cd driftura-showroom
 ```
 
