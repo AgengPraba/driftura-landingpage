@@ -17,9 +17,9 @@ export const cars: Car[] = [
   },
   {
     id: 2,
-    name: 'Nexus RX',
-    modelSrc: '/models/nexus_rx.glb', 
-    color: '#898AC4', 
+    name: 'Audi R8',
+    modelSrc: '/models/audi_r8.glb', 
+    color: '#2323FF', 
     scale: 6.3,
   },
   {

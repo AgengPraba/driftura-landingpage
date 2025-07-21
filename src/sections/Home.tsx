@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         <div className="w-full h-96 md:h-screen flex items-center justify-center overflow-hidden md: mt-[-80px]">
-          <Canvas camera={{ position: [0, 0, 6], fov: 100 }}>
+          <Canvas camera={{ position: [0, 0, 6], fov: 100 }} className='pointer-events-none'>
             <ambientLight intensity={2} />
             <directionalLight position={[5, 5, 5]} intensity={1} />
             <Environment preset="city" />
