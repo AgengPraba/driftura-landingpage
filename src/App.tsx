@@ -6,7 +6,7 @@ import Navbar from './components/Navbar.tsx';
 import Home from './sections/Home.tsx';
 import Gallery from './sections/Gallery.tsx';
 import Services from './sections/Services.tsx';
-import Contact from './sections/Contact.tsx';
+import About from './sections/About.tsx';
 import './index.css'
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

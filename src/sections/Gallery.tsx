@@ -20,6 +20,8 @@ function Gallery() {
     setCurrentIndex(newIndex);
   };
 
+  const isMobile = window.innerWidth < 768;
+
   const currentCar = cars[currentIndex];
 
   return (
@@ -31,7 +33,7 @@ function Gallery() {
         <div>
 
         </div>
-        <div className='cursor-pointer'>
+        <div className='cursor-pointer hidden md:flex'>
           <button className="flex items-center gap-3 text-white drop-shadow-[0_0_10px_var(--theme-color)] hover:scale-105 transition-transform">
             <PlayCircle size={48} />
             <span className="font-semibold">Watch Video</span>
@@ -48,7 +50,7 @@ function Gallery() {
           <Canvas key={currentCar.modelSrc}  camera={{ position: [0, 1, 8], fov: 50 }}>
             <ambientLight intensity={3} />
             <directionalLight position={[5, 5, 5]} intensity={10} />
-            <CarModel src={currentCar.modelSrc} scale={currentCar.scale} />
+            <CarModel src={currentCar.modelSrc} scale={isMobile? 3 :currentCar.scale} />
             <OrbitControls
               target={[0, 1, 0]}
               enableZoom={false}
